@@ -1,7 +1,7 @@
 # Site settings
 title: Lois Blog
 SEOTitle: Lois的博客 | Lois Blog
-header-img: img/post-bg-desk.jpg
+header-img: img/purpleSky.jpg
 email: loismengqiuhua@outlook.com
 description: "Just go ahead."
 keyword: "Lois, Lois Blog, Lois的博客, mengqiuhua, 蒙秋华, android"
@@ -12,7 +12,7 @@ github_repo: "https://github.com/LOISMENG-QH/LOISMENG-QH.github.io.git" # you co
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/pink_peach.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
