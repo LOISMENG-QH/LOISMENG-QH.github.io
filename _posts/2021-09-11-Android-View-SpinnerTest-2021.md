@@ -24,7 +24,8 @@ tags:
 img/dropdown.gif
 img/dialog.gif
 
-<img src="D:\程序媛\安卓\博客\spinner\dropdown.gif" alt="dropdown" style="zoom:67%;" /><img src="D:\程序媛\安卓\博客\spinner\dialog.gif" alt="dialog" style="zoom:67%;" />
+！【dropdown】（https://img11.360buyimg.com/ddimg/jfs/t1/70746/2/16882/62674/613d4d57E3421bac4/9d47316ad9c0879a.gif）
+！【dialog】(https://img12.360buyimg.com/ddimg/jfs/t1/198353/32/8355/72795/613d4d58E74748be1/97266d37b2ee4d88.gif)
 
 ## spinner的常用属性	
 
@@ -104,8 +105,7 @@ spinner设置数据源有两种方式，一种是在xml文件里设置，一般�
 
 这样列表直接就可以获取到数据啦
 
-<img src="D:\程序媛\安卓\博客\spinner\array.gif" alt="array" style="zoom:67%;" />
-
+![静态](https://img14.360buyimg.com/ddimg/jfs/t1/6610/23/12572/197046/613d4d59E5e93fe47/9f2a2acede2f3d9b.gif)
 再按照设定的步骤进行点击事件的设置就很容易实现自己想要的功能啦
 
 #### 动态设置数据源
@@ -175,7 +175,7 @@ public class HeroBean {
 
 ```
 
-![image-20210911195256999](C:\Users\蒙秋华\AppData\Roaming\Typora\typora-user-images\image-20210911195256999.png)
+![image-20210911195256999](https://img14.360buyimg.com/ddimg/jfs/t1/203935/2/6240/170650/613d4d58E70aff02d/682079b678934172.gif)
 
 ​										<!--类似于这样子 甚至可以做其他的自定义样式-->
 
