@@ -369,13 +369,13 @@ private int selectedPostion;
 
 部分源码：
 
-https://github.com/LOISMENG-QH/SpinnerTest.git
+[部分源码](https://github.com/LOISMENG-QH/SpinnerTest.git)
 
 参考：
 
-https://blog.csdn.net/Mq_sir/article/details/117928511
+[Android之Spinner使用详解]（https://blog.csdn.net/Mq_sir/article/details/117928511）
 
-https://blog.csdn.net/chzphoenix/article/details/79414564?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-16.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-16.no_search_link
+[一步一步自定义spinner](https://blog.csdn.net/chzphoenix/article/details/79414564?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-16.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-16.no_search_link)
 
 
 
