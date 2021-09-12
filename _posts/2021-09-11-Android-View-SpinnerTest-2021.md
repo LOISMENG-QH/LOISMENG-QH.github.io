@@ -173,9 +173,8 @@ public class HeroBean {
 
 ```
 
-![bold.gif](https://img14.360buyimg.com/ddimg/jfs/t1/203935/2/6240/170650/613d4d58E70aff02d/682079b678934172.gif)
-
-​										<!--类似于这样子 甚至可以做其他的自定义样式-->
+[![4pf6n1.png](https://z3.ax1x.com/2021/09/12/4pf6n1.png)](https://imgtu.com/i/4pf6n1)
+类似于这样，也可以自己diy别的样式
 
 ##### 编写一个适配器，命名为MyAdapter（其实应该以这个adapter的作用明明会更好，比如HeroAdapter）
 
@@ -315,7 +314,9 @@ class MySelectedListener implements AdapterView.OnItemSelectedListener{
 
 ### spinner效果
 
-怎么实现spinner中被选中的选项字体加粗呢，例如这样![bold](D:\程序媛\安卓\博客\spinner\bold.gif)
+怎么实现spinner中被选中的选项字体加粗呢，例如这样
+![bold.gif](https://img14.360buyimg.com/ddimg/jfs/t1/203935/2/6240/170650/613d4d58E70aff02d/682079b678934172.gif)
+
 
 我们在刚才自定义的adapter里面添加多一个变量
 
