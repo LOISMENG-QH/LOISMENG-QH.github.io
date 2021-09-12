@@ -24,8 +24,8 @@ tags:
 img/dropdown.gif
 img/dialog.gif
 
-！【dropdown】（https://img11.360buyimg.com/ddimg/jfs/t1/70746/2/16882/62674/613d4d57E3421bac4/9d47316ad9c0879a.gif）
-！【dialog】(https://img12.360buyimg.com/ddimg/jfs/t1/198353/32/8355/72795/613d4d58E74748be1/97266d37b2ee4d88.gif)
+![dropdown]（https://img11.360buyimg.com/ddimg/jfs/t1/70746/2/16882/62674/613d4d57E3421bac4/9d47316ad9c0879a.gif）
+！[dialog](https://img12.360buyimg.com/ddimg/jfs/t1/198353/32/8355/72795/613d4d58E74748be1/97266d37b2ee4d88.gif)
 
 ## spinner的常用属性	
 
