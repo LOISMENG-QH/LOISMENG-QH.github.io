@@ -21,6 +21,7 @@ tags:
 ​	下拉框通常有两种呈现形式，一个是下拉式dropdown，一个是对话框时dialog，实际上两种方式的转换只需要改变spinnerMode这一属性即可，dialog式会多一个小标题。
 
 ​	因为我懒，就把要展示的功能都做到一个板块里了（现在先忽略下面的张子枫吧嘎嘎
+
 ![dropdown.gif](https://img12.360buyimg.com/ddimg/jfs/t1/198353/32/8355/72795/613d4d58E74748be1/97266d37b2ee4d88.gif)
 ![dialog.gif](https://img14.360buyimg.com/ddimg/jfs/t1/6610/23/12572/197046/613d4d59E5e93fe47/9f2a2acede2f3d9b.gif)
 
