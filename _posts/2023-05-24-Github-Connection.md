@@ -18,7 +18,6 @@ tags:
 
 几个小时总不能白干吧！很久以前配过一次都忘记了，这次请狠狠记住...
 
-[TOC]
 
 ## 前提准备
 
@@ -28,25 +27,29 @@ tags:
 
 ## 具体连接步骤
 
-1. 设置username和email
+
+
+1. 设置username和email   
 
    
 
-   设置username和email相当于是给机器打上了标签记号，这样在提交代码的时候就能够记录这一次提交行为的发起人，可以很好地帮助追溯查看！而email则可以接收git服务器的通知和邮件提醒，比如代码变更啦。
+   设置username和email相当于是给机器打上了标签记号，这样在提交代码的时候就能够记录这一次提交行为的发起人，可以很好地帮助追溯查看！而email则可以接收git服务器的通知和邮件提醒，比如代码变更啦。      
+
+    
+
+   --global参数表示这台机器上这个配置针对所有的git仓库，当然也可以根据git仓库进行设置。这里先不扩展看了，一人一机的话这样就可以啦。    
 
    
 
-   --global参数表示这台机器上这个配置针对所有的git仓库，当然也可以根据git仓库进行设置。这里先不扩展看了，一人一机的话这样就可以啦。
-   
-   
-   
    引号替换自己的username和邮箱。
-   
+
    ```
    git config --global user.name "loismeng"
    git config --global user.email "loismengqiuhua@outlook.com"
    ```
+
    
+
 2. 生成ssh密钥
 
    
@@ -55,22 +58,21 @@ tags:
 
    [Generating a new SSH key and adding it to the ssh-agent](!https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
-   不得不说还是官方文档靠谱，遇事不决请官方文档，具体里面已经说的很详细了，这里主要总结一下操作步骤。
-   
+   不得不说还是官方文档靠谱，遇事不决请官方文档，具体里面已经说的很详细了，这里主要总结一下操作步骤。  
+
    
 
    ①在终端输入, 引号替换自己的GitHub 电子邮件地址
 
    ```
-ssh-keygen -t ed25519 -C "your_email@example.com"
+   ssh-keygen -t ed25519 -C "your_email@example.com"
    ```
 
    
-   
+
    确认路径之后按enter键，之后会要求输入两次密码，不需要设置的话直接按enter就好
-   
+
    ![image-20230524004547543](https://github.com/LOISMENG-QH/LOISMENG-QH.github.io/blob/master/img/image-20230524004547543.png?raw=true)
-   
 
    
 
@@ -130,11 +132,11 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 
    回车之后输入yes，（如果有密码还要输入密码）
 
-
+   
 
 ​			大功告...没成，真正使用的时候要涉及到git数据库
 
-
+   
 
 值得一提的是，由于我的电脑先前已经有过上面一系列的操作，config文件中已经有配置信息。在这种情况下如果想要进行多用户的话可以参考
 
@@ -146,15 +148,15 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 Git的数据库分为远程数据库和本地数据库的两种。
 
-
+   
 
 远程数据库: 配有专用的服务器，为了多人共享而建立的数据库， 代码上传到云端就不用怕丢失啦。
 
-
+   
 
 本地数据库: 为了方便用户个人使用，在自己的机器上配置的数据库。
 
-
+   
 
 先说说**本地仓库**
 
@@ -166,7 +168,7 @@ Git的数据库分为远程数据库和本地数据库的两种。
 
 ![image-20230524213815348](https://github.com/LOISMENG-QH/LOISMENG-QH.github.io/blob/master/img/image-20230524213815348.png?raw=true)
 
-
+   
 
 相关命令有
 
@@ -180,7 +182,7 @@ git log: 查看提交记录
 
 git reset HEAD~n: 撤回提交记录 n是代表回到n次提交以前的状态
 
-
+   
 
 ### 远程仓库
 
@@ -189,7 +191,6 @@ git reset HEAD~n: 撤回提交记录 n是代表回到n次提交以前的状态
 ①在github上创建一个新的仓库
 
 ②将本地仓库推送到远程
-
 
 
 添加远程仓库的名字和url
@@ -216,7 +217,7 @@ git remote add origin git@github.com:LOISMENG-QH/OCLearning.git
 git branch -M main
 ```
 
-
+   
 
 用push命令将本地的main分支推送到GitHub上，可以使用 -u 参数指定一个默认主机，这样后面就可以不加任何参数使用git push，即将本地的main分支与GitHub上新的main分支相关联。
 
@@ -224,13 +225,13 @@ git branch -M main
 git push -u origin main
 ```
 
-
+   
 
 origin是默认的远程仓库的名称
 
 main是默认的分支名
 
-
+   
 
 如果想查看已经绑定的远程仓库的信息，可以通过
 
@@ -240,30 +241,30 @@ git remote -v
 
 ![image-20230524211425410](https://github.com/LOISMENG-QH/LOISMENG-QH.github.io/blob/master/img/image-20230524211425410.png?raw=true)
 
-
+   
 
 添加远程数据库的时候如果信息写错了，可以把共享数据库信息删掉再重新添加
 
 ```
 git remote rm origin
 ```
-
+   
 就可以删掉origin和本地的连接噜
 
 ## 一些报错原因：
 
 ①连接远程仓库的时候在github上地址选择ssh的，不然会**The requested URL returned error: 403**
-
+   
 ②在使用**git push -u origin master**的时候，报错：**error: 源引用规格 master 没有匹配**
 
-
+   
 
 原因是旧项目和新项目的默认分支名是不一样的，以前是master， 现在是main，可以用**git branch -a**查看分支情况
 
+   
 
+也可以用**git push --set-upstream origin master**命令为推送当前分支并建立与远程上游的跟踪  
 
-也可以用**git push --set-upstream origin master**命令为推送当前分支并建立与远程上游的跟踪
-
-
+   
 
 晚安！
