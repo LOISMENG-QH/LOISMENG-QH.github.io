@@ -29,15 +29,19 @@ tags:
 
 
 
-1. 设置username和email   
+1. 设置username和email  
 
    
 
-   设置username和email相当于是给机器打上了标签记号，这样在提交代码的时候就能够记录这一次提交行为的发起人，可以很好地帮助追溯查看！而email则可以接收git服务器的通知和邮件提醒，比如代码变更啦。      
+   设置username和email相当于是给机器打上了标签记号，这样在提交代码的时候就能够记录这一次提交行为的发起人，可以很好地帮助追溯查看！而email则可以接收git服务器的通知和邮件提醒，比如代码变更啦。  
 
-    
+     
 
-   --global参数表示这台机器上这个配置针对所有的git仓库，当然也可以根据git仓库进行设置。这里先不扩展看了，一人一机的话这样就可以啦。    
+   
+
+   --global参数表示这台机器上这个配置针对所有的git仓库，当然也可以根据git仓库进行设置。这里先不扩展看了，一人一机的话这样就可以啦。  
+
+     
 
    
 
@@ -48,7 +52,7 @@ tags:
    git config --global user.email "loismengqiuhua@outlook.com"
    ```
 
-   
+     
 
 2. 生成ssh密钥
 
@@ -60,7 +64,7 @@ tags:
 
    不得不说还是官方文档靠谱，遇事不决请官方文档，具体里面已经说的很详细了，这里主要总结一下操作步骤。  
 
-   
+     
 
    ①在终端输入, 引号替换自己的GitHub 电子邮件地址
 
@@ -248,13 +252,13 @@ git remote -v
 ```
 git remote rm origin
 ```
-   
+
 就可以删掉origin和本地的连接噜
 
 ## 一些报错原因：
 
 ①连接远程仓库的时候在github上地址选择ssh的，不然会**The requested URL returned error: 403**
-   
+
 ②在使用**git push -u origin master**的时候，报错：**error: 源引用规格 master 没有匹配**
 
    
@@ -265,6 +269,41 @@ git remote rm origin
 
 也可以用**git push --set-upstream origin master**命令为推送当前分支并建立与远程上游的跟踪  
 
-   
+
+
+③出现错误main没有匹配  
+
+
+
+![image-20230526005831053](https://github.com/LOISMENG-QH/LOISMENG-QH.github.io/blob/master/img/image-20230526005831053.png?raw=true)
+
+![image-20230526005933578](https://github.com/LOISMENG-QH/LOISMENG-QH.github.io/blob/master/img/image-20230526005933578.png?raw=true)
+
+  
+
+报错原因是说本地没有main分支，事实上本地分支默认名字是master，上面提到的git branch -m main命令实际上是把本地的默认分支master名称改为main名称，和远程仓库的分支名对上之后再进行上传。  
+
+  
+
+出现这个报错的原因是因为在更改名字之前我还运行了一个git checkout main的命令，导致默认的master分支丢失了，最终的结果就是本地没有分支。
+
+
+
+最终重新对本地仓库进行了初始化处理。  
+
+  
+
+## 参考
+
+[Mac下github的基本使用（有详细过程）](https://blog.csdn.net/qyqyqyi/article/details/128652728?spm=1001.2014.3001.5506)
+
+[Git时出现“error: 源引用表达式 main 没有匹配 error: 推送一些引用到 ‘https://github.com/***.git‘ 失败”的错误提示](https://blog.csdn.net/weixin_42769131/article/details/124223218)
+
+
+
+
+
+
 
 晚安！
+
