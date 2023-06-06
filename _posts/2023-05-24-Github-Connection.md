@@ -144,7 +144,7 @@ tags:
 
 值得一提的是，由于我的电脑先前已经有过上面一系列的操作，config文件中已经有配置信息。在这种情况下如果想要进行多用户的话可以参考
 
-[Git配置多用户 & reset 和 revert](!https://blackdn.github.io/2022/10/04/Git-Advance-2022/)
+[Git配置多用户 & reset 和 revert](https://blackdn.github.io/2022/10/04/Git-Advance-2022/)
 
 ~~麻烦晓黑看到给我打广告费~~
 
